@@ -22,10 +22,10 @@ Použití:
 
 ## Popis testování
 
-| Testy | Popis |
-| ------ | --- | 
-| DbContext | Testy DbContextu vycházejí z entit deklarovaných (naplněných) v DbContextTestsEntities. Testy by měly pokrývat základní CRUD operace včetně důkladnější otestování M:N vazeb (ověření správného chování při OnDelete.Cascade()).|                                                                                                                                                                                                                                                 |
-| User-, Ride- a CarFacadeTests | 
+### DbContext 
+- Testy DbContextu vycházejí z entit deklarovaných (naplněných) v DbContextTestsEntities. 
+- Testy by měly pokrývat základní CRUD operace včetně důkladnější otestování M:N vazeb (ověření správného chování při OnDelete.Cascade()).                                                                                                                                                                                                                                              |
+### User-, Ride- a CarFacadeTests | 
 - Testování fasády pro CRUD i komplexnější operace. 
 - Nejprve se testují jednodušší operace (vkládání, získání, aktualizování), později jsou testy složitější. 
 - Jsme si vědomi toho, že testy unit by měly testovat co nejmenší části, avšak pro důkladné ověření funkcionality jsou některé testy komplikovanější. 
