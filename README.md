@@ -24,8 +24,8 @@ Použití:
 
 ### DbContext 
 - Testy DbContextu vycházejí z entit deklarovaných (naplněných) v DbContextTestsEntities. 
-- Testy by měly pokrývat základní CRUD operace včetně důkladnější otestování M:N vazeb (ověření správného chování při OnDelete.Cascade()).                                                                                                                                                                                                                                              |
-### User-, Ride- a CarFacadeTests | 
+- Testy by měly pokrývat základní CRUD operace včetně důkladnější otestování M:N vazeb (ověření správného chování při OnDelete.Cascade()).                                                                  
+### User-, Ride- a CarFacadeTests
 - Testování fasády pro CRUD i komplexnější operace. 
 - Nejprve se testují jednodušší operace (vkládání, získání, aktualizování), později jsou testy složitější. 
 - Jsme si vědomi toho, že testy unit by měly testovat co nejmenší části, avšak pro důkladné ověření funkcionality jsou některé testy komplikovanější. 
@@ -33,7 +33,7 @@ Použití:
 - Repozitáře jsou vytažené z CookBooku a fungují obecně pro libovolnou entitu. 
 - Do složky docs jsme přidali wireframy s popisem, kde je v plánu využít jaký model. 
 - Zároveň jsme testovali jen složitější modely; ty jednodušší, kde ani není zpětné mapování, v testech hlouběji netestujeme (když jsme schopni vytáhnout více informací, určitě budeme schopni vytáhnout i méně informací stejným postupem). 
-- V testech se nevyskytují entity z nižších vrstev, vše by mělo být přemapováno na modely (např. u RideDetailModel je entita auta jako CarListModel). | 
+- V testech se nevyskytují entity z nižších vrstev, vše by mělo být přemapováno na modely (např. u RideDetailModel je entita auta jako CarListModel).
 
 ---
 
